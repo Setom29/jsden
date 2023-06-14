@@ -55,11 +55,26 @@
     <div id="result-container">
       <div id="result"></div>
     </div>
+    <button id="devneya">
+      <img class="logo" src="img/devneya.png"/>
+      Devneya &rsaquo;
+    </button>
     <button id="run">
       <img class="logo" src="img/logo.png"/>
       Run &rsaquo;
     </button>
   </div>
+  <form id="submit-form">
+    <label for="api-key">API Key:</label>
+    <input type="text" id="api-key" name="api-key" placeholder="Your API Key" required>
+
+    <label for="prompt">Prompt:</label>
+    <textarea id="prompt" name="prompt" placeholder="Your prompt" cols="30" rows="7" required></textarea>
+
+    <button type="submit">Submit</button>
+    <textarea name="response" id="response" cols="30" rows="10"></textarea>
+  </form>
+
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4JX71CKZL7"></script>
@@ -79,5 +94,7 @@
   <script src="js/version.js"></script>
   <script src="js/main.js"></script>
   <script src="js/sw-init.js"></script>
+
+  <script src="js/devneya.js" type="module"></script>
   </body>
 </html>
