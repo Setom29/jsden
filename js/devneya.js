@@ -1,6 +1,6 @@
 import {generateCode} from 'https://cdn.jsdelivr.net/gh/get-zen-dev/Devneya@master/lib/api.js';
 
-const formSubmit = document.getElementById('submit-form')
+const formSubmit = document.getElementById('devneya-form')
 
 const buttonPopup = document.getElementById('devneya')
 const response = document.getElementById('response')
