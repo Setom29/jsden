@@ -2,7 +2,7 @@ import {generateCode} from 'https://cdn.jsdelivr.net/gh/get-zen-dev/Devneya@mast
 
 const formSubmit = document.getElementById('submit-form')
 
-const buttonPopup = document.getElementsByID('show-form')
+const buttonPopup = document.getElementById('devneya')
 const response = document.getElementById('response')
 
 formSubmit.addEventListener("submit", function(event){
@@ -20,7 +20,7 @@ formSubmit.addEventListener("submit", function(event){
 
 })
 
-buttonPopup[0].addEventListener("click", function(event){
+buttonPopup.addEventListener("click", function(event){
     
     formSubmit.classList.toggle("active")
 });
