@@ -257,7 +257,7 @@ li.CodeMirror-hint-active {
   }
 }
 
-#submit-form {
+#devneya-form {
   max-width: 400px;
   margin: 0 auto;
   background-color: #fff;
@@ -267,7 +267,7 @@ li.CodeMirror-hint-active {
   display: none;
 }
 
-#submit-form.active {
+#devneya-form.active {
   display: block;
   position: absolute;
   top: 20%;
