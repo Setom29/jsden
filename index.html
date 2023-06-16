@@ -48,6 +48,7 @@
     <link rel="stylesheet" href="lib/codemirror.min.css" />
     <link rel="stylesheet" href="lib/codemirror.bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="assets/css/devneya-style.css" />
   </head>
 <body>
   <div class="split">
@@ -55,8 +56,8 @@
     <div id="result-container">
       <div id="result"></div>
     </div>
-    <button id="devneya">
-      <img class="logo" src="img/devneya.png"/>
+    <button id="js-devneya-popup-button">
+      <img class="logo" src="./assets/img/devneya-logo.png"/>
       Devneya &rsaquo;
     </button>
     <button id="run">
@@ -64,16 +65,6 @@
       Run &rsaquo;
     </button>
   </div>
-  <form id="devneya-form">
-    <label for="api-key">API Key:</label>
-    <input type="text" id="api-key" name="api-key" placeholder="Your API Key" required>
-
-    <label for="prompt">Prompt:</label>
-    <textarea id="prompt" name="prompt" placeholder="Your prompt" cols="30" rows="7" required></textarea>
-
-    <button type="submit">Submit</button>
-    <textarea name="response" id="response" cols="30" rows="10"></textarea>
-  </form>
 
 
   <!-- Google tag (gtag.js) -->
@@ -95,6 +86,6 @@
   <script src="js/main.js"></script>
   <script src="js/sw-init.js"></script>
 
-  <script src="js/devneya.js" type="module"></script>
+  <script src="./assets/js/devneya.js" type="module"></script>
   </body>
 </html>
