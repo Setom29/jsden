@@ -8,7 +8,8 @@
   --primary: rgb(0, 82, 128);
 }
 
-html, body {
+html,
+body {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -21,7 +22,7 @@ html, body {
 }
 
 ::-webkit-scrollbar-corner {
-  background: rgba(0,0,0,0);
+  background: rgba(0, 0, 0, 0);
 }
 
 ::-webkit-scrollbar {
@@ -73,13 +74,12 @@ body.light-mode a:hover {
   color: var(--primary);
 }
 
-
 #editor-container {
   height: 100%;
 }
 #result-container {
   height: 100%;
-  font-family: Hack, Menlo, Monaco, 'Droid Sans Mono', 'Courier New', monospace;
+  font-family: Hack, Menlo, Monaco, "Droid Sans Mono", "Courier New", monospace;
   white-space: pre;
   background: var(--dark-bg);
   color: var(--dark-font);
@@ -110,7 +110,8 @@ body.light-mode a:hover {
   right: 0;
 }
 
-.result-item, .renderjson {
+.result-item,
+.renderjson {
   margin: 5px;
 }
 
@@ -129,7 +130,6 @@ body.light-mode a:hover {
   height: 100%;
 }
 
-
 .gutter {
   background-color: var(--dark-gutter);
   background-repeat: no-repeat;
@@ -137,36 +137,15 @@ body.light-mode a:hover {
 }
 
 .gutter.gutter-horizontal {
-  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==');
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==");
   cursor: col-resize;
 }
 .gutter.gutter-vertical {
-  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAFAQMAAABo7865AAAABlBMVEVHcEzMzMzyAv2sAAAAAXRSTlMAQObYZgAAABBJREFUeF5jOAMEEAIEEFwAn3kMwcB6I2AAAAAASUVORK5CYII=');
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAFAQMAAABo7865AAAABlBMVEVHcEzMzMzyAv2sAAAAAXRSTlMAQObYZgAAABBJREFUeF5jOAMEEAIEEFwAn3kMwcB6I2AAAAAASUVORK5CYII=");
   cursor: row-resize;
 }
 
 #run {
-  position: absolute;
-  bottom: 5px;
-  right: 5px;
-  z-index: 99;
-  background-color: #0f0f0f;
-  border: none;
-  color: white;
-  padding: 8px 14px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-family: sans-serif;
-  font-weight: 100;
-  letter-spacing: 1px;
-}
-
-#run:hover {
-  background-color: rgb(0, 82, 128);
 }
 
 @media (max-width: 700px) {
@@ -190,34 +169,34 @@ body.light-mode a:hover {
   font-size: 18px;
 }
 .CodeMirror-hints {
-    position: absolute;
-    z-index: 10;
-    overflow: hidden;
-    list-style: none;
-    margin: 0;
-    padding: 2px;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    border-radius: 0px;
-    border: 0px solid #000;
-    background: #000;
-    font-size: 1rem;
-    font-family: monospace;
-    max-height: 20em;
-    overflow-y: auto;
+  position: absolute;
+  z-index: 10;
+  overflow: hidden;
+  list-style: none;
+  margin: 0;
+  padding: 2px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0px;
+  border: 0px solid #000;
+  background: #000;
+  font-size: 1rem;
+  font-family: monospace;
+  max-height: 20em;
+  overflow-y: auto;
 }
 .CodeMirror-hint {
-    margin: 0;
-    padding: 0 4px;
-    border-radius: 2px;
-    white-space: pre;
-    color: #fff;
-    cursor: pointer;
+  margin: 0;
+  padding: 0 4px;
+  border-radius: 2px;
+  white-space: pre;
+  color: #fff;
+  cursor: pointer;
 }
 li.CodeMirror-hint-active {
-    background: #4a4a4a;
-    color: #fff;
+  background: #4a4a4a;
+  color: #fff;
 }
 
 .hide {
@@ -225,4 +204,37 @@ li.CodeMirror-hint-active {
 }
 .show {
   display: block !important;
+}
+
+._btn {
+  z-index: 99;
+  background-color: #0f0f0f;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: 100;
+  letter-spacing: 1px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 0;
+  transition: all .5s;
+}
+
+._btn:hover {
+  background-color: rgb(0, 82, 128);
+}
+
+.button-container {
+  height: 40px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
